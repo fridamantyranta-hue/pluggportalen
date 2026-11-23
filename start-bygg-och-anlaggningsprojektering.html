@@ -38,6 +38,19 @@
 
 /* Flashcards ligger på en egen rad under föreläsningsquizzen. */
 .flashcards-row{margin-top:18px}
+
+/* Särskilt kort för kursens förkortningskortlek. */
+.abbrev-feature{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:26px;margin:0 0 60px;padding:28px 32px;border:1px solid #b8cbb5;border-radius:20px;background:linear-gradient(112deg,#e6eee2 0%,#f5f7ee 68%,#fbf8ed 100%);box-shadow:0 10px 27px #253b2c10}
+.abbrev-feature:after{content:"";position:absolute;right:-42px;top:-90px;width:250px;height:250px;border:1px solid #c4d3bd;border-radius:50%;box-shadow:0 0 0 28px #dce7d53d;pointer-events:none}
+.abbrev-feature-content{position:relative;z-index:1;max-width:640px}
+.abbrev-feature-kicker{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:#527457}
+.abbrev-feature h2{font:normal clamp(1.6rem,3vw,2.2rem)/1.2 Georgia,serif;margin:8px 0 10px;color:#234734}
+.abbrev-feature p{color:#566d5c;font-size:.92rem;line-height:1.65;margin:0}
+.abbrev-feature-link{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:15px;white-space:nowrap;padding:13px 18px;border-radius:11px;background:#315942;color:#fff;font-weight:750;font-size:.9rem;transition:background .2s,transform .2s}
+.abbrev-feature-link:hover{background:#214632;transform:translateY(-2px)}
+.abbrev-feature-link:focus-visible{outline:3px solid #315942;outline-offset:4px}
+.abbrev-feature-link svg{width:18px;height:18px}
+@media(max-width:650px){.abbrev-feature{flex-direction:column;align-items:flex-start;padding:24px;margin-bottom:48px}.abbrev-feature-link{white-space:normal}}
 </style>
 </head>
 <body>
@@ -70,6 +83,14 @@
   </div>
 </section>
 <section class="intro" aria-labelledby="intro-title"><h2 id="intro-title">Om kursens studiematerial</h2><p>Under kursen har vi arbetat med workshops utifrån kursboken <button type="button" class="book-info" id="openBookInfo" aria-haspopup="dialog" aria-controls="bookDialog" title="Visa information om kursboken">Byggledning – Projektering <span class="info-circle" aria-hidden="true">i</span></button>. Vi har även haft föreläsningar från <strong>ByggDialog</strong> och <strong>Trafikverket</strong>.</p><p>Här finns quiz och digitala minneskort som hjälper dig att repetera innehållet, förstå viktiga begrepp och förbereda dig inför duggan.</p></section>
+<section class="abbrev-feature" aria-labelledby="abbrev-feature-title">
+  <div class="abbrev-feature-content">
+    <div class="abbrev-feature-kicker">✧ Repetera begreppen</div>
+    <h2 id="abbrev-feature-title">96 förkortningar att ha koll på</h2>
+    <p>Träna på lagar, avtal, entreprenadformer och byggprocessens viktigaste förkortningar. Välj ett eller flera ämnesområden, sök bland korten och repetera i din egen takt.</p>
+  </div>
+  <a class="abbrev-feature-link" href="flashcards-forkortningar-byggprojektering.html">Träna på förkortningar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</section>
 <section class="section" aria-labelledby="traffar"><div class="section-head"><div class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h2 id="traffar">Frågor från fysiska träffar</h2><p>Quiz och flashcards från undervisningen.</p></div></div>
 <div class="cards">
 <article class="card"><div class="card-top"><div class="mini-icon" aria-hidden="true">▤</div><span class="number">Quiz 01</span></div><h3>Workshopparna</h3><p>27 frågor från de fysiska träffarna.</p><a class="action" href="quiz1.html">Öppna quiz 1 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
